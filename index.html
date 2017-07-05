@@ -2,17 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- viewport -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"+>
 	<title>Login Facebook</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- tipo de letra -->
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<!-- cdn css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- enlazado css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<fb:login-button 
-	  scope="public_profile,email"
-	  onlogin="checkLoginState();">
-	</fb:login-button>
+	<div class="container">
+      <div class="row">
+        <div class="col-lg-offset-1 col-lg-6">
+        <div id="fb-root"></div>
+        <h1>Mi App</h1>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=1483408328364854";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <!-- boton de face -->
+		<fb:login-button 
+		  scope="public_profile,email"
+		  onlogin="checkLoginState();">
+		</fb:login-button>
+		</div>
+	 </div>
+	</div>
 
 
 	
